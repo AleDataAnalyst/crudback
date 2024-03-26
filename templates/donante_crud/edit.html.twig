@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Editar Donante{% endblock %}
+
+{% block body %}
+    <h1>Editar Donante</h1>
+
+    {{ include('donante_crud/_form.html.twig', {'button_label': 'Actualizar'}) }}
+
+    <a href="{{ path('app_donante_crud_index') }}">volver al listado</a>
+
+    {{ include('donante_crud/_delete_form.html.twig') }}
+{% endblock %}
